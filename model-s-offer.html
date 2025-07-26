@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Model S - ElectroMotors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><h2>ElectroMotors</h2></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#models" class="nav-link">Models</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#energy" class="nav-link">Energy</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#charging" class="nav-link">Charging</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#discover" class="nav-link">Discover</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#shop" class="nav-link">Shop</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Order Section -->
+    <section class="order-hero" style="padding: 120px 0 80px; background: #000;">
+        <div class="container">
+            <div class="order-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                <div class="order-info">
+                    <h1 style="color: #fff; font-size: 3rem; margin-bottom: 20px;">Order Model S</h1>
+                    <p style="color: #888; font-size: 1.2rem; margin-bottom: 30px;">Configure your luxury electric sedan with premium features and cutting-edge technology.</p>
+                    <div class="price-info" style="background: #1a1a1a; padding: 30px; border-radius: 15px; margin-bottom: 30px;">
+                        <div style="display: flex; justify-content: between; align-items: center; margin-bottom: 15px;">
+                            <span style="color: #888;">Starting Price:</span>
+                            <span style="color: #3b82f6; font-size: 1.5rem; font-weight: 600;">$89,990</span>
+                        </div>
+                        <div style="display: flex; justify-content: between; align-items: center; margin-bottom: 15px;">
+                            <span style="color: #888;">Est. Delivery:</span>
+                            <span style="color: #fff;">2-4 weeks</span>
+                        </div>
+                        <div style="display: flex; justify-content: between; align-items: center;">
+                            <span style="color: #888;">Federal Tax Credit:</span>
+                            <span style="color: #10b981;">-$7,500</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-visual">
+                    <div class="car-placeholder">
+                        <div class="car-silhouette model-s" style="width: 100%; height: 300px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Configuration Section -->
+    <section class="configuration" style="padding: 80px 0; background: #111;">
+        <div class="container">
+            <h2 class="section-title">Configure Your Model S</h2>
+            <div class="config-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                
+                <!-- Paint Options -->
+                <div class="config-card" style="background: #1a1a1a; padding: 30px; border-radius: 15px;">
+                    <h3 style="color: #fff; margin-bottom: 20px;">Paint</h3>
+                    <div class="paint-options">
+                        <div class="paint-option" style="display: flex; align-items: center; margin-bottom: 15px; padding: 15px; border: 2px solid transparent; border-radius: 10px; cursor: pointer;" onclick="selectOption(this)">
+                            <div style="width: 30px; height: 30px; background: #fff; border-radius: 50%; margin-right: 15px; border: 2px solid #333;"></div>
+                            <div>
+                                <div style="color: #fff; font-weight: 500;">Pearl White</div>
+                                <div style="color: #888; font-size: 0.9rem;">Included</div>
+                            </div>
+                        </div>
+                        <div class="paint-option" style="display: flex; align-items: center; margin-bottom: 15px; padding: 15px; border: 2px solid transparent; border-radius: 10px; cursor: pointer;" onclick="selectOption(this)">
+                            <div style="width: 30px; height: 30px; background: #000; border-radius: 50%; margin-right: 15px; border: 2px solid #333;"></div>
+                            <div>
+                                <div style="color: #fff; font-weight: 500;">Solid Black</div>
+                                <div style="color: #888; font-size: 0.9rem;">+$1,000</div>
+                            </div>
+                        </div>
+                        <div class="paint-option" style="display: flex; align-items: center; margin-bottom: 15px; padding: 15px; border: 2px solid transparent; border-radius: 10px; cursor: pointer;" onclick="selectOption(this)">
+                            <div style="width: 30px; height: 30px; background: #ef4444; border-radius: 50%; margin-right: 15px; border: 2px solid #333;"></div>
+                            <div>
+                                <div style="color: #fff; font-weight: 500;">Red Multi-Coat</div>
+                                <div style="color: #888; font-size: 0.9rem;">+$2,000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wheels Options -->
+                <div class="config-card" style="background: #1a1a1a; padding: 30px; border-radius: 15px;">
+                    <h3 style="color: #fff; margin-bottom: 20px;">Wheels</h3>
+                    <div class="wheel-options">
+                        <div class="wheel-option" style="display: flex; align-items: center; margin-bottom: 15px; padding: 15px; border: 2px solid transparent; border-radius: 10px; cursor: pointer;" onclick="selectOption(this)">
+                            <div style="width: 30px; height: 30px; background: #666; border-radius: 50%; margin-right: 15px;"></div>
+                            <div>
+                                <div style="color: #fff; font-weight: 500;">19" Tempest Wheels</div>
+                                <div style="color: #888; font-size: 0.9rem;">Included</div>
+                            </div>
+                        </div>
+                        <div class="wheel-option" style="display: flex; align-items: center; margin-bottom: 15px; padding: 15px; border: 2px solid transparent; border-radius: 10px; cursor: pointer;" onclick="selectOption(this)">
+                            <div style="width: 30px; height: 30px; background: #333; border-radius: 50%; margin-right: 15px;"></div>
+                            <div>
+                                <div style="color: #fff; font-weight: 500;">21" Arachnid Wheels</div>
+                                <div style="color: #888; font-size: 0.9rem;">+$4,500</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interior Options -->
+                <div class="config-card" style="background: #1a1a1a; padding: 30px; border-radius: 15px;">
+                    <h3 style="color: #fff; margin-bottom: 20px;">Interior</h3>
+                    <div class="interior-options">
+                        <div class="interior-option" style="display: flex; align-items: center; margin-bottom: 15px; padding: 15px; border: 2px solid transparent; border-radius: 10px; cursor: pointer;" onclick="selectOption(this)">
+                            <div style="width: 30px; height: 30px; background: #000; border-radius: 5px; margin-right: 15px; border: 2px solid #333;"></div>
+                            <div>
+                                <div style="color: #fff; font-weight: 500;">All Black</div>
+                                <div style="color: #888; font-size: 0.9rem;">Included</div>
+                            </div>
+                        </div>
+                        <div class="interior-option" style="display: flex; align-items: center; margin-bottom: 15px; padding: 15px; border: 2px solid transparent; border-radius: 10px; cursor: pointer;" onclick="selectOption(this)">
+                            <div style="width: 30px; height: 30px; background: #8B4513; border-radius: 5px; margin-right: 15px; border: 2px solid #333;"></div>
+                            <div>
+                                <div style="color: #fff; font-weight: 500;">Black and White</div>
+                                <div style="color: #888; font-size: 0.9rem;">+$2,000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Autopilot Options -->
+                <div class="config-card" style="background: #1a1a1a; padding: 30px; border-radius: 15px;">
+                    <h3 style="color: #fff; margin-bottom: 20px;">Autopilot</h3>
+                    <div class="autopilot-options">
+                        <div class="autopilot-option" style="display: flex; align-items: center; margin-bottom: 15px; padding: 15px; border: 2px solid transparent; border-radius: 10px; cursor: pointer;" onclick="selectOption(this)">
+                            <div style="width: 30px; height: 30px; background: #3b82f6; border-radius: 5px; margin-right: 15px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.2rem;">🚗</div>
+                            <div>
+                                <div style="color: #fff; font-weight: 500;">Basic Autopilot</div>
+                                <div style="color: #888; font-size: 0.9rem;">Included</div>
+                            </div>
+                        </div>
+                        <div class="autopilot-option" style="display: flex; align-items: center; margin-bottom: 15px; padding: 15px; border: 2px solid transparent; border-radius: 10px; cursor: pointer;" onclick="selectOption(this)">
+                            <div style="width: 30px; height: 30px; background: #10b981; border-radius: 5px; margin-right: 15px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.2rem;">🤖</div>
+                            <div>
+                                <div style="color: #fff; font-weight: 500;">Full Self-Driving</div>
+                                <div style="color: #888; font-size: 0.9rem;">+$15,000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Summary -->
+    <section class="order-summary" style="padding: 80px 0; background: #000;">
+        <div class="container">
+            <div class="summary-content" style="max-width: 600px; margin: 0 auto; background: #1a1a1a; padding: 40px; border-radius: 20px;">
+                <h2 style="color: #fff; text-align: center; margin-bottom: 30px;">Order Summary</h2>
+                <div class="summary-item" style="display: flex; justify-content: space-between; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #333;">
+                    <span style="color: #888;">Model S</span>
+                    <span style="color: #fff;">$89,990</span>
+                </div>
+                <div class="summary-item" style="display: flex; justify-content: space-between; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #333;">
+                    <span style="color: #888;">Paint & Options</span>
+                    <span style="color: #fff;" id="options-total">$0</span>
+                </div>
+                <div class="summary-item" style="display: flex; justify-content: space-between; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #333;">
+                    <span style="color: #888;">Federal Tax Credit</span>
+                    <span style="color: #10b981;">-$7,500</span>
+                </div>
+                <div class="summary-total" style="display: flex; justify-content: space-between; margin-top: 20px; padding-top: 20px; border-top: 2px solid #3b82f6;">
+                    <span style="color: #fff; font-size: 1.2rem; font-weight: 600;">Total</span>
+                    <span style="color: #3b82f6; font-size: 1.5rem; font-weight: 700;" id="total-price">$82,490</span>
+                </div>
+                
+                <div class="order-form" style="margin-top: 40px;">
+                    <form style="display: flex; flex-direction: column; gap: 20px;">
+                        <input type="text" placeholder="Full Name" style="padding: 15px; border: none; border-radius: 10px; background: #333; color: #fff; font-size: 1rem;" required>
+                        <input type="email" placeholder="Email Address" style="padding: 15px; border: none; border-radius: 10px; background: #333; color: #fff; font-size: 1rem;" required>
+                        <input type="tel" placeholder="Phone Number" style="padding: 15px; border: none; border-radius: 10px; background: #333; color: #fff; font-size: 1rem;" required>
+                        <textarea placeholder="Special Instructions (Optional)" style="padding: 15px; border: none; border-radius: 10px; background: #333; color: #fff; font-size: 1rem; min-height: 100px; resize: vertical;"></textarea>
+                        <button type="submit" class="btn btn-primary" style="padding: 15px; font-size: 1.1rem; margin-top: 20px;">Place Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Vehicles</h4>
+                    <ul>
+                        <li><a href="model-s.html">Model S</a></li>
+                        <li><a href="model-3.html">Model 3</a></li>
+                        <li><a href="model-x.html">Model X</a></li>
+                        <li><a href="model-y.html">Model Y</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Energy</h4>
+                    <ul>
+                        <li><a href="solar-panels.html">Solar Panels</a></li>
+                        <li><a href="solar-roof.html">Solar Roof</a></li>
+                        <li><a href="powerwall.html">Powerwall</a></li>
+                        <li><a href="megapack.html">Megapack</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Charging</h4>
+                    <ul>
+                        <li><a href="charging.html">Charging</a></li>
+                        <li><a href="supercharger.html">Supercharger</a></li>
+                        <li><a href="destination-charging.html">Destination Charging</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Discover</h4>
+                    <ul>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="investor-relations.html">Investor Relations</a></li>
+                        <li><a href="news.html">News</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ElectroMotors. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        let totalPrice = 89990;
+        let optionsTotal = 0;
+
+        function selectOption(element) {
+            // Remove selection from siblings
+            const siblings = element.parentNode.children;
+            for (let sibling of siblings) {
+                sibling.style.border = '2px solid transparent';
+            }
+            
+            // Select current option
+            element.style.border = '2px solid #3b82f6';
+            
+            // Update pricing (simplified - in real app would be more complex)
+            updatePricing();
+        }
+
+        function updatePricing() {
+            const federalCredit = 7500;
+            const finalTotal = totalPrice + optionsTotal - federalCredit;
+            
+            document.getElementById('options-total').textContent = '$' + optionsTotal.toLocaleString();
+            document.getElementById('total-price').textContent = '$' + finalTotal.toLocaleString();
+        }
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your order! You will receive a confirmation email shortly.');
+        });
+    </script>
+</body>
+</html>
